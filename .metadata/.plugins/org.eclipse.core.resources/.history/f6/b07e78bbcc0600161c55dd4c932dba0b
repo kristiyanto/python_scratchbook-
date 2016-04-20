@@ -1,0 +1,8 @@
+#! /bin/usr/python3.5
+
+def main():
+    graph = dict(A = ["B","C"], B=["A"], C=["D","A"])
+    route = findRoute(graph, start, end, path[])
+def findRout(graph, start, end, path[]):
+    
+if __name__ == "__main__": main()

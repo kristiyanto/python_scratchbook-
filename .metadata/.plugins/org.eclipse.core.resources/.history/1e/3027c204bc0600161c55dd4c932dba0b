@@ -1,0 +1,7 @@
+#! /usr/bin/python3.5
+# Check if string is Permutation
+
+def(main)
+
+
+if __name__ == "__main__": main()

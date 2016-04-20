@@ -1,0 +1,21 @@
+#! /bin/usr/python3.5
+
+def main():
+    s = "aaaaabbbcc"
+    result = compressThis(s)
+    print("{}".format(result))
+    
+def compressThis(s):
+    r = list()
+    for i in range(len(s)):
+        cons = 0
+        
+        if (i+1) <= len(s) and s[i] == s[i+1]: 
+            cons += 1
+        elif cons > 0:
+            r.append(str(cons))
+        else:
+            r.append(s[i])
+            
+    return r
+if __name__ =="__main__": main()

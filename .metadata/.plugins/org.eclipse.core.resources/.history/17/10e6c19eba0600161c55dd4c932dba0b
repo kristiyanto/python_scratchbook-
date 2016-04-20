@@ -1,0 +1,14 @@
+#!/usr/bin/python3.5
+
+def main():
+    the_string = "abcde"
+    result = isUniqueChars(the_string)
+    print("\n{}".format(result))
+
+def isUniqueChars(s):
+    the_string = bytearray(s)
+    for char in the_string:
+        del bytearray[char]
+        return False if char in the_string else print("Keep going")
+    return True
+if __name__ == "__main__": main()

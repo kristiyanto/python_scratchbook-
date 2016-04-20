@@ -1,18 +1,15 @@
 #!/usr/bin/python3.5
+# Check if a string have unique chars
 
 def main():
-    the_string = "abcde"
+    the_string = "Hello it's me."
     result = isUniqueChars(the_string)
-    print(result)
+    print("\n{}".format(result))
 
 def isUniqueChars(the_string):
-    if len(the_string) > 128:
-        print(len(the_string))
-        return False
-    else:
-        charByte = bytearray()
-        for char in the_string:
-            print(char, end="\n") if ord(char) in charByte else charByte.append(ord(char))
-        return(charByte)
-
+    for char in the_string:
+        the_string = the_string.lstrip(char)
+        if char in the_string:
+            return False
+    return True
 if __name__ == "__main__": main()

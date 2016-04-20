@@ -1,0 +1,20 @@
+#! /bin/usr/python3.5
+# Find path
+
+def main():
+    graph = dict(A = ["B","C"], B=["Y", "W"], C=["W","Z"])
+    route = findRoute(graph, "A", "Z")
+    print(route)
+def findRoute(graph, start, end, path=[]):
+    path = path + [start]
+    if start == end:
+        return path
+    if not start in graph:
+        return None
+    for node in graph[start]:
+        if node not in path:
+            newpath = findRoute(graph, node, end, path)
+            if newpath: return newpath
+    return None
+    
+if __name__ == "__main__": main()

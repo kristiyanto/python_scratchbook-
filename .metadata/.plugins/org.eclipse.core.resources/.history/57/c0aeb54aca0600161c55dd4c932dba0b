@@ -1,0 +1,18 @@
+#! /bin/usr/python3.5
+
+def main():
+    s = "aaaaabbbcc"
+    result = compressThis(s)
+    print("{}".format(result))
+    
+def compressThis(s):
+    r = list(s[1])
+    for i in range(len(s)):
+        c = s[i]
+        counter = 0
+        if r[-1] != c and counter < 2: r.append(c)
+        elif r[-1] == c: counter += 1
+        else: r.append(counter)
+            
+    return r
+if __name__ =="__main__": main()

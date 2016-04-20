@@ -1,0 +1,15 @@
+#! /bin/usr/python3.5
+
+def main():
+    s = "aaaaabbbcc"
+    result = compressThis(s)
+    print("{}".format(result))
+    
+def compressThis(s):
+    r = list(s[1])
+    for i in range(len(s)):
+        if s[-1] 
+
+            
+    return r
+if __name__ =="__main__": main()
