@@ -8,25 +8,30 @@
 4|1461137809000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/4.py
 5|1461139599000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/5.py
 6|1461140782000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/6.py
+7|1461142077000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/7.py
+8|1461142280000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/8.py
 -- END DISKCACHE
 -- START DICTIONARY
-6
-5=1
-4=2
-3=3
+8
+6=1
+5=2
+4=3
 1=4
-2=5
-6=6
+3=5
+8=6
+2=7
+7=8
 -- END DICTIONARY
 -- START TREE 1
-7
+8
 com|1|compressThis!10@
-fin|1|findRoute!18@
-iso|1|isOneEditAway!26@
-isp|1|isPermutation!34@
-isu|1|isUniqueChars!42@
-mai|6|main!26@main!10@main!42@main!34@main!18@main!50@
-one|2|oneEditInsert!26@oneEditReplace!26@
+fib|1|fib!18@
+fin|1|findRoute!26@
+iso|1|isOneEditAway!34@
+isp|1|isPermutation!42@
+isu|1|isUniqueChars!50@
+mai|8|main!34@main!10@main!50@main!42@main!18@main!58@main!26@main!66@
+one|2|oneEditInsert!34@oneEditReplace!34@
 -- END TREE
 -- START TREE 2
 0
