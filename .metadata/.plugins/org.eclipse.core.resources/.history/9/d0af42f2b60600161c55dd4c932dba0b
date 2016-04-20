@@ -1,0 +1,19 @@
+#!/usr/bin/python3.5
+
+def main():
+    the_string = "abcde"
+    result = isUniqueChars(str)
+    print("Unique") if result else print("Not Unique")
+
+def isUniqueChars(str):
+    if len(str) > 128:
+        print(len(str))
+        return False
+    else:
+        charByte = bytearray()
+        for char in str:
+            return False if ord(char) in charByte else charByte.append(ord(char))
+        return True
+        print(charByte)
+
+if __name__ == "__main__": main()

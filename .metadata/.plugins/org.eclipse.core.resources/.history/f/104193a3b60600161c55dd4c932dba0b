@@ -1,0 +1,18 @@
+#!/usr/bin/python3.5
+
+def main():
+    str = "This is a string"
+    result = isUniqueChars(str)
+    print("Unique") if result else print("Unique")
+
+def isUniqueChars(str):
+    if len(str) > 128:
+        return False
+    else:
+        charByte = bytearray()
+        for char in str:
+            return False if ord(char) in charByte else charByte.append(ord(char))
+        return True
+        print(charByte)
+
+if __name__ == "__main__": main()
