@@ -1,0 +1,49 @@
+#===============================================================================
+# You are given the following information, but you may prefer to do some research for yourself.
+# 
+# 1 Jan 1900 was a Monday.
+# Thirty days has September,
+# April, June and November.
+# All the rest have thirty-one,
+# Saving February alone,
+# Which has twenty-eight, rain or shine.
+# And on leap years, twenty-nine.
+# A leap year occurs on any year evenly divisible by 4, but not on a century unless it is divisible by 400.
+# How many Sundays fell on the first of the month during the twentieth century (1 Jan 1901 to 31 Dec 2000)?
+#===============================================================================
+
+
+#! /usr/bin/python3.5
+
+def main():
+    min = 1900
+    max = 2000
+    for curr_year in range (min, max):            
+        # Get number of days
+        totalDays = getTotalDays(curr_year)
+        # Get starting day
+        # Get number of Monday
+
+def getTotalDays(year):
+    days = (31,28,31,30,31,31,31,31,30,30,31,31)
+    total=0
+    for d in days: total=total+d
+    
+    if (year%4==0) and (year%100!=0):
+        total = total+1
+        return total
+    elif (year%100==0) and (year%400==0):
+        total = total+1
+        return total
+    else:
+        return total
+             
+def getStartingDay(year):
+    if year==        
+    
+class yearOf:
+    __init__(self):
+        self.year
+
+    
+if __name__ == "__main__":

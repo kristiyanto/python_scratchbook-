@@ -1,18 +1,58 @@
 #! /bin/us/python3.5
-
-#By replacing the 1st digit of the 2-digit number *3, 
-#it turns out that six of the nine possible values: 13, 23, 43, 53, 73, and 83, are all prime.
-
-#By replacing the 3rd and 4th digits of 56**3 with the same digit, 
-#this 5-digit number is the first example having seven primes among the ten generated numbers, 
-#yielding the family: 56003, 56113, 56333, 56443, 56663, 56773, and 56993. 
-#Consequently 56003, being the first member of this family, is the smallest prime with this property.
+from sympy.ntheory.factor_ import primefactors
+from datashape.discovery import isnull
+from numba.cgutils import is_null
+from networkx.classes.function import is_empty
 
 
-#Find the smallest prime which, by replacing part of the number 
-#(not necessarily adjacent digits) with the same digit, is part of an eight prime value family.
+#===============================================================================
+# The first two consecutive numbers to have two distinct prime factors are:
+# 
+# 14 = 2 × 7
+# 15 = 3 × 5
+# 
+# The first three consecutive numbers to have three distinct prime factors are:
+# 
+# 644 = 2² × 7 × 23
+# 645 = 3 × 5 × 43
+# 646 = 2 × 17 × 19.
+# 
+# Find the first four consecutive integers to have four distinct prime factors. What is the first of these numbers?
+#===============================================================================
 
 def main():
     
-    
+    i = 0
+    numbers = list()
+    collection = list()
+
+    while len(numbers)!=4:
+        i +=1 
+        x = prime_factors(i)
+        if len(x) > 4:
+            if len(collection)==0: 
+                collection.append(x)
+                numbers.append(i)
+            elif numbers[-1]+1==i and x  not in collection: 
+                collection.append(x)
+                numbers.append(i)
+            else:
+                del numbers[:]
+                del collection[:]
+    print("{} : {}".format(numbers, collection))
+
+def prime_factors(n):
+    i = 2
+    factors = []
+    while i * i <= n:
+        if n % i:
+            i += 1
+        else:
+            n //= i
+            factors.append(i)
+    if n > 1:
+        factors.append(n)
+    return factors     
+
+ 
 if __name__ == "__main__": main()

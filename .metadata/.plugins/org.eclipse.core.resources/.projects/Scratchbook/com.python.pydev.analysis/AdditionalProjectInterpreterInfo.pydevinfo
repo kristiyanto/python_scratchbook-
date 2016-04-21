@@ -9,30 +9,44 @@
 5|1461139599000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/5.py
 6|1461140782000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/6.py
 7|1461142077000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/7.py
-8|1461142280000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/8.py
+8|1461231177000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/8.py
+9|1461227541000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/9.py
+10|1461229156000000000|/Users/Daniel/Documents/GITHUB/python_scratchbook-/Scratchbook/10.py
 -- END DISKCACHE
 -- START DICTIONARY
-8
-6=1
-5=2
-4=3
+9
+8=1
+7=2
+5=3
 1=4
 3=5
-8=6
+9=6
 2=7
-7=8
+6=8
+4=9
 -- END DICTIONARY
 -- START TREE 1
-8
+14
+cal|0|
 com|1|compressThis!10@
 fib|1|fib!18@
 fin|1|findRoute!26@
-iso|1|isOneEditAway!34@
-isp|1|isPermutation!42@
-isu|1|isUniqueChars!50@
-mai|8|main!34@main!10@main!50@main!42@main!18@main!58@main!26@main!66@
-one|2|oneEditInsert!34@oneEditReplace!34@
+get|1|getYears!34@
+iso|1|isOneEditAway!42@
+isp|2|isPrime!50@isPermutation!58@
+isu|1|isUniqueChars!66@
+mai|9|main!42@main!10@main!66@main!34@main!58@main!18@main!50@main!26@main!74@
+one|2|oneEditInsert!42@oneEditReplace!42@
+pri|1|prime_factors!50@
+sta|0|
+sun|0|
+yea|0|
 -- END TREE
 -- START TREE 2
-0
+5
+__i|0|
+fir|0|
+sel|0|
+tot|0|
+yea|0|
 -- END TREE
